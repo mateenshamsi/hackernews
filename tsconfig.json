@@ -2,10 +2,18 @@
   "compilerOptions": {
     "strict": true,
     "jsx": "react-jsx",
-    "jsxImportSource": "hono/jsx"
+    "jsxImportSource": "hono/jsx",
+     "module": "nodenext",            // or "nodenext"
+    "moduleResolution": "nodenext", // helps Node find packages
+    "target": "es2020",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+   
+    "skipLibCheck": true
   },
   "paths":{
     "@/shared/*": ["./shared/*"],
     "@/*": ["./src/*"]
-  }
+  },
+  
 }

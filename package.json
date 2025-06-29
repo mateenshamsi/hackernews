@@ -1,20 +1,27 @@
 {
   "name": "betternews",
+  "type": "module",
   "scripts": {
     "dev": "bun run --hot src/index.ts",
     "format:write": " bunx prettier --write 'src/**/*.{ts,tsx}'",
     "format:check": "bunx prettier --check 'src/**/*.{ts,tsx}"
   },
   "dependencies": {
-    "hono": "^4.8.3"
+    "@neondatabase/serverless": "^1.0.1",
+    "dotenv": "^17.0.0",
+    "drizzle-orm": "^0.44.2",
+    "hono": "^4.8.3",
+    "zod": "^3.25.67"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.0",
     "@ianvs/prettier-plugin-sort-imports": "^4.4.2",
     "@types/bun": "latest",
+    "drizzle-kit": "^0.31.4",
     "eslint": "^9.30.0",
     "globals": "^16.2.0",
     "prettier": "^3.6.2",
     "typescript-eslint": "^8.35.0"
-  }
+  },
+  "target": "es2022"
 }
